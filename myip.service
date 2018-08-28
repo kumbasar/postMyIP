@@ -1,0 +1,13 @@
+#/lib/systemd/system
+
+[Unit]
+Description=My post IP
+After=network-online.target firewalld.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/root/postmyIP.py
+
+[Install]
+WantedBy=multi-user.target
