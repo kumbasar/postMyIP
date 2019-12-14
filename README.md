@@ -1,2 +1,2 @@
 # postMyIP
-An IP# notification email script
+An IP# email notification script
